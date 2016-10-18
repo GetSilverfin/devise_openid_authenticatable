@@ -3,10 +3,11 @@ $:.unshift File.dirname(__FILE__)
 $:.unshift File.expand_path('../../lib', __FILE__)
 
 require "scenario/config/environment"
-require "rails/test_help"
 require 'rspec/rails'
+require "rails/test_help"
 require 'sham_rack'
 require 'rots'
+require "webrat"
 
 Webrat.configure do |config|
   config.mode = :rails
