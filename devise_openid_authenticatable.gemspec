@@ -20,8 +20,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency "rack-openid", ">= 1.2.0"
   gem.add_dependency "devise", ">= 1.3"
 
-  gem.add_development_dependency "rspec", "~> 3.5.0"
-  gem.add_development_dependency "rspec-rails", "~> 3.5.2"
   gem.add_development_dependency "mocha"
   gem.add_development_dependency "sqlite3-ruby"
   gem.add_development_dependency "sham_rack"

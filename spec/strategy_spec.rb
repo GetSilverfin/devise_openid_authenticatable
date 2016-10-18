@@ -2,6 +2,9 @@ require 'spec_helper'
 
 RSpec.describe Devise::Strategies::OpenidAuthenticatable do
   include RSpec::Rails::RequestExampleGroup
+  include ::Rails::Controller::Testing::TestProcess
+  include ::Rails::Controller::Testing::TemplateAssertions
+  include ::Rails::Controller::Testing::Integration
 
   def openid_params
     {
